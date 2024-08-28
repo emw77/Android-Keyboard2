@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top Row -->
+    <Row>
+        <Key android:codes="113" android:keyLabel="Q" android:width="10dp"/>
+        <Key android:codes="119" android:keyLabel="W" android:width="10dp"/>
+        <Key android:codes="101" android:keyLabel="E" android:width="10dp"/>
+        <Key android:codes="114" android:keyLabel="R" android:width="10dp"/>
+        <Key android:codes="116" android:keyLabel="T" android:width="10dp"/>
+        <Key android:codes="121" android:keyLabel="Y" android:width="10dp"/>
+        <Key android:codes="117" android:keyLabel="U" android:width="10dp"/>
+        <Key android:codes="105" android:keyLabel="I" android:width="10dp"/>
+        <Key android:codes="111" android:keyLabel="O" android:width="10dp"/>
+        <Key android:codes="112" android:keyLabel="P" android:width="10dp"/>
+    </Row>
+
+    <!-- Home Row -->
+    <Row>
+        <Key android:codes="97" android:keyLabel="A" android:width="10dp"/>
+        <Key android:codes="115" android:keyLabel="S" android:width="10dp"/>
+        <Key android:codes="100" android:keyLabel="D" android:width="10dp"/>
+        <Key android:codes="102" android:keyLabel="F" android:width="10dp"/>
+        <Key android:codes="103" android:keyLabel="G" android:width="10dp"/>
+        <Key android:codes="104" android:keyLabel="H" android:width="10dp"/>
+        <Key android:codes="106" android:keyLabel="J" android:width="10dp"/>
+        <Key android:codes="107" android:keyLabel="K" android:width="10dp"/>
+        <Key android:codes="108" android:keyLabel="L" android:width="10dp"/>
+    </Row>
+
+    <!-- Bottom Row with AI Key -->
+    <Row>
+        <Key android:codes="122" android:keyLabel="Z" android:width="10dp"/>
+        <Key android:codes="120" android:keyLabel="X" android:width="10dp"/>
+        <Key android:codes="99" android:keyLabel="C" android:width="10dp"/>
+        <Key android:codes="118" android:keyLabel="V" android:width="10dp"/>
+        <Key android:codes="98" android:keyLabel="B" android:width="10dp"/>
+        <Key android:codes="110" android:keyLabel="N" android:width="10dp"/>
+        <Key android:codes="109" android:keyLabel="M" android:width="10dp"/>
+        <!-- AI Button -->
+        <Key android:codes="3000" android:keyLabel="AI" android:width="20dp"/>
+        <Key android:codes="67" android:keyLabel="Del" android:width="10dp"/>
+        <Key android:codes="10" android:keyLabel="Enter" android:width="20dp"/>
+    </Row>
+
+    <!-- Space Bar -->
+    <Row>
+        <Key android:codes="32" android:keyLabel="Space" android:width="50dp"/>
+    </Row>
+</Keyboard>
