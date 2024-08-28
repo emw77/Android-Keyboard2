@@ -36,7 +36,11 @@
         <Key android:codes="98" android:keyLabel="B" android:width="10%p"/>
         <Key android:codes="110" android:keyLabel="N" android:width="10%p"/>
         <Key android:codes="109" android:keyLabel="M" android:width="10%p"/>
-        <!-- AI Button -->
+       
+
+        <Key android:codes="-1" android:keyLabel="⇧" android:keyEdgeFlags="left" android:width="20%p android:isSticky="true"/>
+
+    <!-- AI Button -->
         <Key android:codes="3000" android:keyLabel="AI" android:width="20%p"/>
         <Key android:codes="67" android:keyLabel="Del" android:width="10%p"/>
         <Key android:codes="10" android:keyLabel="Enter" android:width="20%p"/>
