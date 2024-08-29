@@ -8,7 +8,6 @@
         android:keyPreviewLayout="@layout/key_preview"
         android:background="@color/design_default_color_background"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:paddingBottom="10dp">
+        android:layout_height="wrap_content">
 </android.inputmethodservice.KeyboardView>
 
