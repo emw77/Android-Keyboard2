@@ -18,14 +18,14 @@
             android:name=".MainActivity"
             android:exported="true"> <!-- Set to true because it has an intent filter -->
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <!-- Declare other activities like ChatActivity -->
-        <activity android:name=".ChatActivity"
-                  android:exported="false"/> <!-- Exported set according to your app's needs -->
-
+        </activity> <!-- Declare other activities like ChatActivity -->
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"/>
     </application>
+
 </manifest>
