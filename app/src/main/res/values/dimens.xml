@@ -1,3 +1,4 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="keyboard_height">600dp</dimen>
 </resources>
