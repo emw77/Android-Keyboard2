@@ -35,3 +35,4 @@
         <Key android:codes="-3" android:keyLabel="ABC"/> <!-- Switch back to QWERTY -->
     </Row>
 </Keyboard>
+
