@@ -6,8 +6,8 @@
         android:keyTextColor="@android:color/white"
         android:keyBackground="@drawable/key_background"
         android:keyPreviewLayout="@layout/key_preview"
-        android:background="@color/keyboard_background_color"
+        android:background="@color/design_default_color_background"
         android:layout_width="match_parent"
-        android:layout_height="390dp">
+        android:layout_height="wrap_content">
 </android.inputmethodservice.KeyboardView>
 
