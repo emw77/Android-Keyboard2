@@ -9,14 +9,21 @@ import android.view.inputmethod.InputConnection
 class CustomKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 
     private lateinit var keyboardView: KeyboardView
+    private lateinit var qwertyKeyboard: Keyboard
+    private lateinit var symbolsKeyboard: Keyboard
     private var isShifted = false
+    private var isSymbols = false
 
     override fun onCreate() {
         super.onCreate()
+        // Load the keyboard layouts
+        qwertyKeyboard = Keyboard(this, R.xml.qwerty)
+        symbolsKeyboard = Keyboard(this, R.xml.symbols)
     }
 
     override fun onCreateInputView(): View {
         keyboardView = layoutInflater.inflate(R.layout.layout, null) as KeyboardView
+        keyboardView.keyboard = qwertyKeyboard
         keyboardView.setOnKeyboardActionListener(this)
         return keyboardView
     }
@@ -29,7 +36,20 @@ class CustomKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActio
             }
             -1 -> { // SHIFT key
                 isShifted = !isShifted
+                qwertyKeyboard.isShifted = isShifted
                 keyboardView.invalidateAllKeys()
+            }
+            -2 -> { // Switch to symbols keyboard
+                if (!isSymbols) {
+                    keyboardView.keyboard = symbolsKeyboard
+                    isSymbols = true
+                }
+            }
+            -3 -> { // Switch back to QWERTY keyboard
+                if (isSymbols) {
+                    keyboardView.keyboard = qwertyKeyboard
+                    isSymbols = false
+                }
             }
             else -> {
                 val character = if (isShifted) primaryCode.toChar().uppercaseChar() else primaryCode.toChar()
